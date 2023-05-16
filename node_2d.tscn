@@ -1,5 +1,11 @@
+<<<<<<< HEAD
 [gd_scene format=3 uid="uid://cmbs6g6a22iqn"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+=======
+[gd_scene format=3 uid="uid://bntrso8lx4tlb"]
+
+[node name="Node2D" type="Node2D"]
+>>>>>>> ca909296c1f5e0784ff4bda4b89405d051d6ddbb
