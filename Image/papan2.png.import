@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dq4oxiw1h88a0"
-path="res://.godot/imported/FacesetCute.png-766fadf912345bcdabac1e840558b1ad.ctex"
+uid="uid://bbg4lw0oueyk0"
+path="res://.godot/imported/papan2.png-306affbb460ce3aabec53d0fedbf13d1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Image/FacesetCute.png"
-dest_files=["res://.godot/imported/FacesetCute.png-766fadf912345bcdabac1e840558b1ad.ctex"]
+source_file="res://Image/papan2.png"
+dest_files=["res://.godot/imported/papan2.png-306affbb460ce3aabec53d0fedbf13d1.ctex"]
 
 [params]
 

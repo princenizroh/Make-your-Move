@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bfpv3lrarelnw"]
+
+[ext_resource type="Texture2D" uid="uid://ccpt2qwmc585n" path="res://Image/SpriteSheetWhite.png" id="1_ji8mi"]
+
+[node name="bidak" type="CharacterBody2D"]
+input_pickable = true
+
+[node name="SpriteSheetWhite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(10, 8)
+texture = ExtResource("1_ji8mi")
+hframes = 2

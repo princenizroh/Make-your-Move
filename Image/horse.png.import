@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cspxo0aj855hc"
-path="res://.godot/imported/FacesetWhite.png-504ab6d858131788136f7d3b5d751166.ctex"
+uid="uid://dsy675ht85oxv"
+path="res://.godot/imported/horse.png-a82f5984800e0008854aadd55aee6905.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Image/FacesetWhite.png"
-dest_files=["res://.godot/imported/FacesetWhite.png-504ab6d858131788136f7d3b5d751166.ctex"]
+source_file="res://Image/horse.png"
+dest_files=["res://.godot/imported/horse.png-a82f5984800e0008854aadd55aee6905.ctex"]
 
 [params]
 

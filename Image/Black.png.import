@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://slmm03gycxsi"
-path="res://.godot/imported/Faceset.png-e8d252826ae7c65093575f06953e21e3.ctex"
+uid="uid://c0n1iktaxprxh"
+path="res://.godot/imported/Black.png-2d16e254be05939da0fc99d5df72a5d4.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Image/Faceset.png"
-dest_files=["res://.godot/imported/Faceset.png-e8d252826ae7c65093575f06953e21e3.ctex"]
+source_file="res://Image/Black.png"
+dest_files=["res://.godot/imported/Black.png-2d16e254be05939da0fc99d5df72a5d4.ctex"]
 
 [params]
 

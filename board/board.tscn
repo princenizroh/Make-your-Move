@@ -1,0 +1,310 @@
+[gd_scene load_steps=5 format=3 uid="uid://c1e07jng1nfd8"]
+
+[ext_resource type="Script" path="res://board/Board.gd" id="1_dvn2u"]
+[ext_resource type="PackedScene" uid="uid://bfpv3lrarelnw" path="res://bidak/bidak.tscn" id="4_bo2em"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n40he"]
+load_path = "res://.godot/imported/Black.png-2d16e254be05939da0fc99d5df72a5d4.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f0ret"]
+load_path = "res://.godot/imported/white.png-54b7913fe82fb0a4633fd18b23594468.ctex"
+
+[node name="Board" type="GridContainer"]
+custom_minimum_size = Vector2(48, 48)
+offset_left = 1.0
+offset_top = -1.0
+offset_right = 225.0
+offset_bottom = 223.0
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+columns = 10
+
+[node name="a" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="7" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="6" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="a"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="b" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="7" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="6" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="b"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="c" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="7" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="6" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="c"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="d" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="7" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="6" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="d"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="e" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="6" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="7" type="TextureRect" parent="e"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="f" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="7" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="6" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="f"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="g" type="GridContainer" parent="."]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 0
+script = ExtResource("1_dvn2u")
+
+[node name="7" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="6" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="5" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="4" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="3" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="2" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_f0ret")
+stretch_mode = 2
+
+[node name="1" type="TextureRect" parent="g"]
+layout_mode = 2
+texture = SubResource("CompressedTexture2D_n40he")
+stretch_mode = 2
+
+[node name="bidak" parent="." instance=ExtResource("4_bo2em")]
+position = Vector2(80, 181)
