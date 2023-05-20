@@ -7,7 +7,7 @@ var pos = Vector2.ZERO
 func _ready():
 	pass
 func move(target):
-		$Tween.interpolate_property(self, "position", pos * 47, target * 47, .1, Tween.TRANS_QUINT, Tween.EASE_OUT)
+		$Tween.interpolate_property(self, "position", pos * 47, target * 47, 0.1, Tween.TRANS_QUINT, Tween.EASE_OUT)
 		$Tween.start()
 		
 		pos = target
