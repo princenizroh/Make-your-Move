@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwv8thi2wtk2b"]
+
+[ext_resource type="Script" path="res://Scenes/Level.gd" id="1_6b64d"]
+[ext_resource type="PackedScene" uid="uid://o4eg4wemiits" path="res://King/King.tscn" id="2_etuon"]
+
+[node name="Game" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 768.0
+offset_bottom = 443.0
+
+[node name="Level" type="Node2D" parent="."]
+position = Vector2(289, 262)
+script = ExtResource("1_6b64d")
+
+[node name="King" parent="Level" instance=ExtResource("2_etuon")]
+z_index = 1
+position = Vector2(-62, -60)

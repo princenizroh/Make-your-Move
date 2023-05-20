@@ -1,70 +1,108 @@
-[gd_scene load_steps=5 format=3 uid="uid://c1e07jng1nfd8"]
+[gd_scene load_steps=6 format=3 uid="uid://c6omtolp7e1iy"]
 
-[ext_resource type="Script" path="res://board/Board.gd" id="1_dvn2u"]
-[ext_resource type="PackedScene" uid="uid://bfpv3lrarelnw" path="res://bidak/bidak.tscn" id="4_bo2em"]
+[ext_resource type="Script" path="res://Scripts/Board.gd" id="1_7ad32"]
+[ext_resource type="PackedScene" uid="uid://o4eg4wemiits" path="res://King/King.tscn" id="4_bo2em"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n40he"]
 load_path = "res://.godot/imported/Black.png-2d16e254be05939da0fc99d5df72a5d4.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kqbau"]
+size = Vector2(19, 18)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_f0ret"]
 load_path = "res://.godot/imported/white.png-54b7913fe82fb0a4633fd18b23594468.ctex"
 
 [node name="Board" type="GridContainer"]
 custom_minimum_size = Vector2(48, 48)
-offset_left = 1.0
-offset_top = -1.0
-offset_right = 225.0
-offset_bottom = 223.0
+offset_right = 220.0
+offset_bottom = 228.0
+scale = Vector2(0.5, 0.5)
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 10
+script = ExtResource("1_7ad32")
 
 [node name="a" type="GridContainer" parent="."]
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="7" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_n40he")
 stretch_mode = 2
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/7"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
+
 [node name="6" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_f0ret")
 stretch_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/6"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
 
 [node name="5" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_n40he")
 stretch_mode = 2
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/5"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
+
 [node name="4" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_f0ret")
 stretch_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/4"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
 
 [node name="3" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_n40he")
 stretch_mode = 2
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/3"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
+
 [node name="2" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_f0ret")
 stretch_mode = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/2"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
 
 [node name="1" type="TextureRect" parent="a"]
 layout_mode = 2
 texture = SubResource("CompressedTexture2D_n40he")
 stretch_mode = 2
 
+[node name="CollisionShape2D" type="CollisionShape2D" parent="a/1"]
+position = Vector2(16, 16)
+shape = SubResource("RectangleShape2D_kqbau")
+debug_color = Color(0.509804, 0.427451, 0.988235, 0.419608)
+
 [node name="b" type="GridContainer" parent="."]
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="7" type="TextureRect" parent="b"]
 layout_mode = 2
@@ -105,7 +143,7 @@ stretch_mode = 2
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="7" type="TextureRect" parent="c"]
 layout_mode = 2
@@ -146,7 +184,7 @@ stretch_mode = 2
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="7" type="TextureRect" parent="d"]
 layout_mode = 2
@@ -187,7 +225,7 @@ stretch_mode = 2
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="6" type="TextureRect" parent="e"]
 layout_mode = 2
@@ -228,7 +266,7 @@ stretch_mode = 2
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="7" type="TextureRect" parent="f"]
 layout_mode = 2
@@ -269,7 +307,7 @@ stretch_mode = 2
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
-script = ExtResource("1_dvn2u")
+script = ExtResource("1_7ad32")
 
 [node name="7" type="TextureRect" parent="g"]
 layout_mode = 2
@@ -307,4 +345,5 @@ texture = SubResource("CompressedTexture2D_n40he")
 stretch_mode = 2
 
 [node name="bidak" parent="." instance=ExtResource("4_bo2em")]
+visible = false
 position = Vector2(80, 181)

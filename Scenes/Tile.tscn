@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcn8603p8kjds"]
+
+[ext_resource type="Texture2D" uid="uid://dq5wbk32gw8iw" path="res://Image/White block.png" id="1_he4gy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_foy05"]
+size = Vector2(23, 23)
+
+[node name="Tile" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.523438, 0.546875)
+texture = ExtResource("1_he4gy")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_foy05")
