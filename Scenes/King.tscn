@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://o4eg4wemiits"]
+
+[ext_resource type="Script" path="res://Scripts/King.gd" id="1_ipmvs"]
+[ext_resource type="Texture2D" uid="uid://ccpt2qwmc585n" path="res://Image/SpriteSheetWhite.png" id="2_451fr"]
+
+[node name="King" type="CharacterBody2D"]
+script = ExtResource("1_ipmvs")
+
+[node name="SpriteSheetWhite" type="Sprite2D" parent="."]
+z_index = 2
+texture_filter = 1
+position = Vector2(-1, -1)
+texture = ExtResource("2_451fr")
+hframes = 2

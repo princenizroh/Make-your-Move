@@ -1,16 +1,14 @@
-extends Node2D
+extends CharacterBody2D
 
-var pos = Vector2.ZERO
+var speed = 1000
+var target = Vector2()
+var pos = Vector2(40,20)
 
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass
-func move(target):
-		$Tween.interpolate_property(self, "position", pos * 47, target * 47, 0.1, Tween.TRANS_QUINT, Tween.EASE_OUT)
-		$Tween.start()
-		
-		pos = target
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
+func _input(event):
+	if event.is_action_pressed("Left Click"):
+		target = get_global_mouse_position()
+func _physics_process(delta):
+	velocity = (target - position).normalized() * speed
+	
+	if (target - position).length() > 10:
+		move_and_slide()

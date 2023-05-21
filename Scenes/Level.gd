@@ -19,10 +19,7 @@ func _ready():
 			add_child(t)
 			
 			tile_grid.append(Vector2(i,j))
-	$King.position = Vector2(53, 3 * 34)
-	$King.pos = Vector2(0, 4)
-	$King.move($King.pos)
-	
+	$King.position = Vector2(50,3)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
